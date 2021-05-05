@@ -13,7 +13,7 @@ def check_for_medicine(name, pin_code, date_range):
     import requests
     import json
     dates = [(datetime.now()+timedelta(days=i)).strftime('%d-%m-%Y') for i in range(0, date_range)]
-    slack_url = 'https://hooks.slack.com/services/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'
+    slack_url = 'slack_hook' #Integrate the slack hook here.
 
     co_win_url = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin'
     
